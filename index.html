@@ -12,22 +12,38 @@
   <title>Shot</title>
   <link rel="stylesheet" href="css/style.min.css">
 
-  <script src="jquery.min.js"></script>
-  <script src="jquery.numscroller-1.0.js"></script>
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript">
+    (function (m, e, t, r, i, k, a) {
+      m[i] = m[i] || function () {
+        (m[i].a = m[i].a || []).push(arguments)
+      };
+      m[i].l = 1 * new Date();
+      k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k,
+        a)
+    })
+    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+    ym(63535423, "init", {
+      clickmap: true,
+      trackLinks: true,
+      accurateTrackBounce: true
+    });
+  </script>
+  <noscript>
+    <div><img src="https://mc.yandex.ru/watch/63535423" style="position:absolute; left:-9999px;" alt="" /></div>
+  </noscript>
+  <!-- /Yandex.Metrika counter -->
+
 
 </head>
-
-<!-- TODO 
-  resize
-  head slider
-  send email
--->
 
 
 <body>
   <!-- HEADER -->
   <header class="section-outer section-header">
     <div class="section-inner">
+
       <div class="section-header-main">
         <div class="progress-container section-header-main__scroll">
           <div class="progress-bar" id="myBar"></div>
@@ -41,7 +57,6 @@
         <ul class="section-header-main__nav">
           <li class="section-header-main__nav-item"><a href="#">Home</a></li>
           <li class="section-header-main__nav-item"><a href="#about">About</a></li>
-          <!-- <li class="section-header-main__nav-item"><a href="#">Services</a></li> -->
           <li class="section-header-main__nav-item"><a href="#skills">Skills</a></li>
           <li class="section-header-main__nav-item"><a href="#education">Education</a></li>
           <li class="section-header-main__nav-item"><a href="#experience">Experience</a></li>
@@ -56,9 +71,18 @@
         </div>
       </div>
 
-      <div class="section-header-slider" id="home">
+      <div class="section-header-content" id="home">
 
-        <div class="content-slider">
+        <div class="container demo">
+          <div class="content">
+            <div id="large-header" class="large-header">
+              <canvas id="demo-canvas"></canvas>
+              <h1 class="main-title"><span class="thin">Developer</span> portfolio</h1>
+            </div>
+          </div>
+        </div>
+
+        <!-- <div class="content-slider">
           <div class="slider">
             <ul class="mask" style="height: 100%;">
               <li class="anim1" style="height: 100%;">
@@ -85,8 +109,7 @@
               </li>
             </ul>
           </div>
-        </div>
-
+        </div> -->
       </div>
     </div>
   </header>
@@ -229,7 +252,7 @@
                 <span class="flag">Freelancer</span>
                 <span class="time-wrapper"><span class="time">2016 - present</span></span>
               </div>
-              <div class="desc">My current employment. Way better than the position before!</div>
+              <div class="desc">Web-developer</div>
             </div>
           </li>
 
@@ -251,9 +274,21 @@
                 <span class="flag">MSEC</span>
                 <span class="time-wrapper"><span class="time">2018 - 2019</span></span>
               </div>
-              <div class="desc">Teacher of informational technological.</div>
+              <div class="desc">Teacher of informational technological</div>
             </div>
           </li>
+        </ul>
+
+        <!-- Item 4 -->
+        <li>
+          <div class="direction-r">
+            <div class="flag-wrapper">
+              <span class="flag">Freelancer</span>
+              <span class="time-wrapper"><span class="time">2019 - 2020</span></span>
+            </div>
+            <div class="desc">System administrator</div>
+          </div>
+        </li>
         </ul>
 
       </div>
@@ -369,6 +404,10 @@
   </footer>
   <!-- END CONTACT -->
 
+  <script src="./js/header-bg-TweenLite.js"></script>
+  <script src="./js/header-bg-easePack.js"></script>
+  <script src="./js/header-bg-demo.js"></script>
+
   <script src="./js/scroll.js"></script>
   <script src="./js/about.js"></script>
   <script src="./js/slowNumber.js"></script>
@@ -377,4 +416,5 @@
   <script src="./js/skill.js"></script>
   <script src="./js/main.js"></script>
 </body>
+
 </html>
