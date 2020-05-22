@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- yandex webmaster -->
+  <meta name="yandex-verification" content="03545747f0fd5773" />
+
+  <link rel="icon" href="./img/favicon.ico">
+  <title>Shot</title>
+  <link rel="stylesheet" href="css/style.min.css">
+
+  <script src="jquery.min.js"></script>
+  <script src="jquery.numscroller-1.0.js"></script>
+
+</head>
+
+<!-- TODO 
+  resize
+  head slider
+  send email
+-->
+
+
+<body>
+  <!-- HEADER -->
+  <header class="section-outer section-header">
+    <div class="section-inner">
+      <div class="section-header-main">
+        <div class="progress-container section-header-main__scroll">
+          <div class="progress-bar" id="myBar"></div>
+        </div>
+
+        <div class="section-header-main__img">
+          <img src="./img/person-photo.jpg" alt="">
+        </div>
+        <div class="section-header-main__name">Alexandr Shot</div>
+        <div class="section-header-main__position">Web-developer</div>
+        <ul class="section-header-main__nav">
+          <li class="section-header-main__nav-item"><a href="#">Home</a></li>
+          <li class="section-header-main__nav-item"><a href="#about">About</a></li>
+          <!-- <li class="section-header-main__nav-item"><a href="#">Services</a></li> -->
+          <li class="section-header-main__nav-item"><a href="#skills">Skills</a></li>
+          <li class="section-header-main__nav-item"><a href="#education">Education</a></li>
+          <li class="section-header-main__nav-item"><a href="#experience">Experience</a></li>
+          <li class="section-header-main__nav-item"><a href="#work">Work</a></li>
+          <li class="section-header-main__nav-item"><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="section-header-main__copy">
+          <small>&copy; Copyright &copy;
+            <script>
+              document.write(new Date().getFullYear());
+            </script> All rights reserved </small>
+        </div>
+      </div>
+
+      <div class="section-header-slider" id="home">
+
+        <div class="content-slider">
+          <div class="slider">
+            <ul class="mask" style="height: 100%;">
+              <li class="anim1" style="height: 100%;">
+                <div class="section-header-slider-item">
+                  <div class="section-header-slider-item__title">I am a Alexandr</div>
+                  <div class="section-header-slider-item__subtitle">some text for other users</div>
+                  <div class="section-header-slider-item__button">
+                    <button>View portfolio</button>
+                  </div>
+                </div>
+              </li>
+              <li class="anim2">
+                <div class="section-header-slider-item">
+                  <div class="section-header-slider-item__title">I am a Alexandr</div>
+                  <div class="section-header-slider-item__subtitle">some text for other users</div>
+                  <div class="section-header-slider-item__button">
+                    <button>View portfolio</button>
+                  </div>
+                </div>
+              </li>
+              <li class="anim3">
+                <div class="quote">Hello, this is a quote from an animal.</div>
+                <div class="source">- Animal</div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </header>
+  <!-- END HEADER -->
+
+
+  <!-- ABOUT -->
+  <section class="section-outer section-about" id="about">
+    <div class="section-inner">
+      <div class="section-about-id">About me</div>
+      <div class="section-about-title">Who am I?</div>
+      <div class="section-about-text">
+        <strong>Hi I'm Alexandr Shot</strong> On her way she met a copy. The copy warned the Little Blind Text, that
+        where it came from it would have been rewritten a thousand times and everything that was left from its origin
+        would be the word "and" and the Little Blind Text should turn around and return to its own, safe country. Even
+        the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day
+        however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of
+        Grammar.
+      </div>
+      <div class="section-about-content">
+
+        <div class="section-about-content-item">
+          <div id="stars"></div>
+          <div class="section-about-content-item__number slowNumber">12</div>
+          <div class="section-about-content-item__title">Projects</div>
+        </div>
+        <div class="section-about-content-item">
+          <div id="stars2"></div>
+          <div class="section-about-content-item__number slowNumber">9</div>
+          <div class="section-about-content-item__title">Clients</div>
+        </div>
+        <div class="section-about-content-item">
+          <div id="stars3"></div>
+          <div class="section-about-content-item__number slowNumber">11</div>
+          <div class="section-about-content-item__title">Cups of coffee</div>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+  <!-- END ABOUT -->
+
+
+  <!-- SKILLS -->
+  <sections class="section-outer section-skills" id="skills">
+    <div class="section-inner">
+      <div class="section-skills-id">My specialty</div>
+      <div class="section-skills-title">My skills</div>
+      <div class="section-skills-text">
+        The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and
+        devious Semikoli, but the Little Blind Text didn’t listen. She packed her seven versalia, put her initial into
+        the belt and made herself on the way.
+      </div>
+      <ul class="section-skills-content">
+
+        <li>
+          <div class="progressbar-title">
+            <h3>HTML5</h3>
+            <span class="percent" id="html-pourcent"></span>
+          </div>
+          <div class="bar-container">
+            <span class="progressbar progressred" id="progress-html"></span>
+          </div>
+        </li>
+        <li>
+          <div class="progressbar-title">
+            <h3>CSS / SASS</h3>
+            <span class="percent" id="css-pourcent"></span>
+          </div>
+          <div class="bar-container">
+            <span class="progressbar progressorange" id="progress-css"></span>
+          </div>
+        </li>
+        <li>
+          <div class="progressbar-title">
+            <h3>JavaScript</h3>
+            <span class="percent" id="javascript-pourcent"></span>
+          </div>
+          <div class="bar-container">
+            <span class="progressbar progressgreen" id="progress-javascript"></span>
+          </div>
+        </li>
+        <li>
+          <div class="progressbar-title">
+            <h3>Photoshop</h3>
+            <span class="percent" id="php-pourcent"></span>
+          </div>
+          <div class="bar-container">
+            <span class="progressbar progressblue" id="progress-php"></span>
+          </div>
+        </li>
+
+      </ul>
+    </div>
+  </sections>
+  <!-- END SKILLS -->
+
+  <!-- EDUCATION -->
+  <section class="section-outer section-education" id="education">
+    <div class="section-inner">
+      <div class="section-education-id">Education</div>
+      <div class="section-education-title">Education</div>
+      <div class="section-education-content">
+
+        <button class="accordion">Belarusian National Technical University</button>
+        <div class="panel">
+          <p>2013 - 2017, engineering and pedagogy faculty - teacher-programmer</p>
+        </div>
+
+        <button class="accordion">Belarusian National Technical University</button>
+        <div class="panel">
+          <p>2014 - 2015, Institute of advanced training - economist-manager</p>
+        </div>
+
+        <button class="accordion">Belarusian State Pedagogical University Named After Maxim Tank</button>
+        <div class="panel">
+          <p>2017 - 2020, Institute of psychology. correspondence. - master of psychology</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- END EDUCATION -->
+
+  <!-- EXPERIENCE -->
+  <section class="section-outer section-experience" id="experience">
+    <div class="section-inner">
+      <div class="section-experience-id">Experience</div>
+      <div class="section-experience-title">Work Experience</div>
+      <div class="section-experience-content">
+
+        <!-- The Timeline -->
+        <ul class="timeline">
+
+          <!-- Item 1 -->
+          <li>
+            <div class="direction-r">
+              <div class="flag-wrapper">
+                <span class="flag">Freelancer</span>
+                <span class="time-wrapper"><span class="time">2016 - present</span></span>
+              </div>
+              <div class="desc">My current employment. Way better than the position before!</div>
+            </div>
+          </li>
+
+          <!-- Item 2 -->
+          <li>
+            <div class="direction-r">
+              <div class="flag-wrapper">
+                <span class="flag">MSEC</span>
+                <span class="time-wrapper"><span class="time">2017 - 2019</span></span>
+              </div>
+              <div class="desc">Head of software and computing Department</div>
+            </div>
+          </li>
+
+          <!-- Item 3 -->
+          <li>
+            <div class="direction-r">
+              <div class="flag-wrapper">
+                <span class="flag">MSEC</span>
+                <span class="time-wrapper"><span class="time">2018 - 2019</span></span>
+              </div>
+              <div class="desc">Teacher of informational technological.</div>
+            </div>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+  </section>
+  <!-- END EXPERIENCE -->
+
+
+  <!-- WORK -->
+  <section class="section-outer section-work" id="work">
+    <div class="section-inner">
+      <div class="section-work-id">My work</div>
+      <div class="section-work-title">Recent work</div>
+      <div class="section-work-content">
+
+        <div class="carousel">
+          <div class="items-container">
+
+            <div class="item active">
+              <div class="description">
+                <div class="project-name">
+                  <iframe src="https://shotalex.github.io/Metrika/" frameborder="0"></iframe>
+                </div>
+                <a href="https://shotalex.github.io/Metrika/" target="_blank">
+                  <img class="project-image" src="./img/work-01.png" alt="project">
+                </a>
+
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="description">
+                <div class="project-name">
+                  <iframe src="https://shotalex.github.io/Protips/" frameborder="0"></iframe>
+                </div>
+                <a href="https://shotalex.github.io/Protips/" target="_blank">
+                  <img class="project-image" src="./img/work-02.png" alt="project">
+                </a>
+              </div>
+            </div>
+
+          </div>
+          <div class="control left">
+            <div class="arrow left">&lt;</div>
+          </div>
+          <div class="control right">
+            <div class="arrow right gradient-border">&gt;</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- END WORK -->
+
+
+  <!-- CONTACT -->
+  <footer class="section-outer section-contact" id="contact">
+    <div class="section-inner">
+      <div class="section-contact-id">Contact with me</div>
+      <div class="section-contact-title">Contact</div>
+      <div class="section-contact-content">
+
+        <!-- left section -->
+        <form class="form section-contact-content-form" role="form" method="post" action="mailto:shot.aleks@gmail.com">
+          <div class="form__input">
+            <input class="form-input" type="text" id="name" placeholder="NAME" name="name" value="">
+          </div>
+
+          <div class="form__input">
+            <input class="form-input" type="email" id="email" placeholder="EMAIL" name="email" value="">
+          </div>
+
+          <div class="form__textarea">
+            <textarea class="form-textarea" rows="6" placeholder="MESSAGE" name="message"></textarea>
+          </div>
+
+          <div class="form__button section-header-slider-item__button">
+            <button class="form-button" id="submit" type="submit" value="SEND">Submit</button>
+          </div>
+        </form>
+        <!-- end left section -->
+
+        <!-- right section -->
+        <ul class="section-contact-content-social">
+          <li><a href="tel:80291224029">
+              <img src="./img/call.png" alt="call me">
+              + 375 (29) 122-40-29</a></li>
+          <li><a href="mailto:shot.aleks@gmail.com">
+              <img src="./img/mail.png" alt="mail">
+              shot.aleks@gmail.com</a></li>
+          <li id="social-map"><a
+              href="https://www.google.com/maps/place/%D0%9C%D0%B8%D0%BD%D1%81%D0%BA/@53.9032045,27.5481836,12.31z/data=!4m5!3m4!1s0x46dbcfd35b1e6ad3:0xb61b853ddb570d9!8m2!3d53.9006011!4d27.558972">
+              <img src="./img/map.png" alt="map">
+              Belarus, Minsk
+            </a></li>
+        </ul>
+        <!-- end right section -->
+      </div>
+
+      <ul class="section-contact-links">
+        <a href="https://www.linkedin.com/in/shotalex/"><img src="./img/linkedin.png" alt="linked"></a>
+        <a href="https://github.com/ShotAlex"><img src="./img/github.png" alt="github"></a>
+        <a href="tg://resolve?domain=AlexandrShot"><img src="./img/telegram.png" alt="telegram"></a>
+        <a href="https://vk.com/alexander_shot"><img src="./img/vk.png" alt="vk"></a>
+        <a href="https://www.instagram.com/shot.aleksandr/"><img src="./img/instagram.png" alt="instagram"></a>
+        <!-- <a href="https://www.facebook.com/alexandr.shot.7/"><img src="./img/facebook.png" alt="facebook"></a> -->
+        <!-- <a href="viber://chat?number=80291224029"><img src="./img/viber.png" alt="viber"></a> -->
+        <!-- <a href="#"><img src="./img/youtube.png" alt="youtube"></a> -->
+      </ul>
+
+    </div>
+  </footer>
+  <!-- END CONTACT -->
+
+  <script src="./js/scroll.js"></script>
+  <script src="./js/about.js"></script>
+  <script src="./js/slowNumber.js"></script>
+  <script src="./js/education.js"></script>
+  <script src="./js/work.js"></script>
+  <script src="./js/skill.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+</html>
