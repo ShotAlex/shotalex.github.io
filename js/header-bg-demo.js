@@ -94,7 +94,7 @@
             posx = e.clientX + document.body.scrollLeft + document.documentElement.scrollLeft;
             posy = e.clientY + document.body.scrollTop + document.documentElement.scrollTop;
         }
-        target.x = posx;
+        target.x = posx - 700; // Cursor x -700 padding-left + left board
         target.y = posy;
     }
 
