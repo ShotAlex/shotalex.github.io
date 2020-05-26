@@ -9,6 +9,8 @@
   <meta name="yandex-verification" content="03545747f0fd5773" />
 
   <link rel="icon" href="./img/favicon.ico">
+  <link rel="shortcut icon" type="image/x-icon" href="./img/favicon.ico" />
+
   <title>Shot</title>
   <link rel="stylesheet" href="css/style.min.css">
 
@@ -35,15 +37,16 @@
   </noscript>
   <!-- /Yandex.Metrika counter -->
 
-
 </head>
 
 
 <body>
   <!-- HEADER -->
-  <header class="section-outer section-header">
+  <header class="section-outer section-header" id="home">
     <div class="section-inner">
 
+      <!-- START MENU -->
+      
       <div class="section-header-main">
         <div class="progress-container section-header-main__scroll">
           <div class="progress-bar" id="myBar"></div>
@@ -54,8 +57,8 @@
         </div>
         <div class="section-header-main__name">Alexandr Shot</div>
         <div class="section-header-main__position">Web-developer</div>
-        <ul class="section-header-main__nav">
-          <li class="section-header-main__nav-item"><a href="#">Home</a></li>
+        <ul class="section-header-main__nav" id="top-menu">
+          <li class="section-header-main__nav-item"><a href="#home">Home</a></li>
           <li class="section-header-main__nav-item"><a href="#about">About</a></li>
           <li class="section-header-main__nav-item"><a href="#skills">Skills</a></li>
           <li class="section-header-main__nav-item"><a href="#education">Education</a></li>
@@ -69,7 +72,15 @@
               document.write(new Date().getFullYear());
             </script> All rights reserved </small>
         </div>
+
+        <!-- <div class="section-header-main__burger">
+          <input type="checkbox" id="overlay-input" />
+          <label for="overlay-input" id="overlay-button"><span></span></label>
+        </div> -->
+        
       </div>
+
+      <!-- END MENU-->
 
       <div class="section-header-content" id="home">
 
@@ -180,7 +191,7 @@
         <li>
           <div class="progressbar-title">
             <h3>HTML5</h3>
-            <span class="percent" id="html-pourcent"></span>
+            <span class="percent" id="html-pourcent">92%</span>
           </div>
           <div class="bar-container">
             <span class="progressbar progressred" id="progress-html"></span>
@@ -189,7 +200,7 @@
         <li>
           <div class="progressbar-title">
             <h3>CSS / SASS</h3>
-            <span class="percent" id="css-pourcent"></span>
+            <span class="percent" id="css-pourcent">84%</span>
           </div>
           <div class="bar-container">
             <span class="progressbar progressorange" id="progress-css"></span>
@@ -198,7 +209,7 @@
         <li>
           <div class="progressbar-title">
             <h3>JavaScript</h3>
-            <span class="percent" id="javascript-pourcent"></span>
+            <span class="percent" id="javascript-pourcent">70%</span>
           </div>
           <div class="bar-container">
             <span class="progressbar progressgreen" id="progress-javascript"></span>
@@ -207,7 +218,7 @@
         <li>
           <div class="progressbar-title">
             <h3>Photoshop</h3>
-            <span class="percent" id="php-pourcent"></span>
+            <span class="percent" id="php-pourcent">75%</span>
           </div>
           <div class="bar-container">
             <span class="progressbar progressblue" id="progress-php"></span>
@@ -341,19 +352,46 @@
               </div>
             </div>
 
+            <div class="item">
+              <div class="description">
+                <div class="project-name">
+                  <iframe src="https://shotalex.github.io/repair/" frameborder="0"></iframe>
+                </div>
+                <a href="https://shotalex.github.io/repair/" target="_blank">
+                  <img class="project-image" src="./img/work-03.png" alt="project">
+                </a>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="description">
+                <div class="project-name">
+                  <iframe src="https://shotalex.github.io/kickoff/" frameborder="0"></iframe>
+                </div>
+                <a href="https://shotalex.github.io/kickoff/" target="_blank">
+                  <img class="project-image" src="./img/work-04.png" alt="project">
+                </a>
+              </div>
+            </div>
+
           </div>
-          <div class="control left">
+          <div class="arrows">
+            <div class="control left">
             <div class="arrow left">&lt;</div>
           </div>
           <div class="control right">
             <div class="arrow right gradient-border">&gt;</div>
           </div>
+          </div>
+          
         </div>
 
       </div>
     </div>
   </section>
   <!-- END WORK -->
+
+  
 
 
   <!-- CONTACT -->
@@ -362,9 +400,9 @@
       <div class="section-contact-id">Contact with me</div>
       <div class="section-contact-title">Contact</div>
       <div class="section-contact-content">
-
         <!-- left section -->
-        <form class="form section-contact-content-form" role="form" method="post" action="mailto:shot.aleks@gmail.com">
+        <form class="form section-contact-content-form" role="form" method="post"
+          action="https://formspree.io/shot-aleksandr@mail.ru">
           <div class="form__input">
             <input class="form-input" type="text" id="name" placeholder="NAME" name="name" value="">
           </div>
@@ -378,7 +416,7 @@
           </div>
 
           <div class="form__button section-header-slider-item__button">
-            <button class="form-button" id="submit" type="submit" value="SEND">Submit</button>
+            <button class="form-button" id="submit" type="submit" value="Send">Submit</button>
           </div>
         </form>
         <!-- end left section -->
@@ -426,6 +464,13 @@
   <script src="./js/work.js"></script>
   <script src="./js/skill.js"></script>
   <script src="./js/main.js"></script>
+
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script> -->
+
+    <!-- slowly scroll -->
+   <script src="http://code.jquery.com/jquery-1.11.1.js"></script>
+   <script src="./js/scrollTo.js"></script>
 </body>
 
 </html>
