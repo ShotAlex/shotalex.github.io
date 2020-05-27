@@ -5,33 +5,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Shot</title>
+  <link rel="shortcut icon" type="image/x-icon" href="./img/favicon.ico" />
+  <link rel="stylesheet" href="css/style.min.css">
+  
   <!-- yandex webmaster -->
   <meta name="yandex-verification" content="03545747f0fd5773" />
-
-  <link rel="icon" href="./img/favicon.ico">
-  <link rel="shortcut icon" type="image/x-icon" href="./img/favicon.ico" />
-
-  <title>Shot</title>
-  <link rel="stylesheet" href="css/style.min.css">
-
   <!-- Yandex.Metrika counter -->
-  <script type="text/javascript">
-    (function (m, e, t, r, i, k, a) {
-      m[i] = m[i] || function () {
-        (m[i].a = m[i].a || []).push(arguments)
-      };
-      m[i].l = 1 * new Date();
-      k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k,
-        a)
-    })
-    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
-
-    ym(63535423, "init", {
-      clickmap: true,
-      trackLinks: true,
-      accurateTrackBounce: true
-    });
-  </script>
+  <script src="./js/yandex-metrika.js"></script>
   <noscript>
     <div><img src="https://mc.yandex.ru/watch/63535423" style="position:absolute; left:-9999px;" alt="" /></div>
   </noscript>
@@ -39,14 +20,11 @@
 
 </head>
 
-
 <body>
   <!-- HEADER -->
   <header class="section-outer section-header" id="home">
     <div class="section-inner">
 
-      <!-- START MENU -->
-      
       <div class="section-header-main">
         <div class="progress-container section-header-main__scroll">
           <div class="progress-bar" id="myBar"></div>
@@ -55,17 +33,26 @@
         <div class="section-header-main__img">
           <img src="./img/person-photo.jpg" alt="">
         </div>
+        
         <div class="section-header-main__name">Alexandr Shot</div>
+
         <div class="section-header-main__position">Web-developer</div>
-        <ul class="section-header-main__nav" id="top-menu">
-          <li class="section-header-main__nav-item"><a href="#home">Home</a></li>
-          <li class="section-header-main__nav-item"><a href="#about">About</a></li>
-          <li class="section-header-main__nav-item"><a href="#skills">Skills</a></li>
-          <li class="section-header-main__nav-item"><a href="#education">Education</a></li>
-          <li class="section-header-main__nav-item"><a href="#experience">Experience</a></li>
-          <li class="section-header-main__nav-item"><a href="#work">Work</a></li>
-          <li class="section-header-main__nav-item"><a href="#contact">Contact</a></li>
+
+        <ul class="section-header-main__nav overlay" id="myNav">
+          <div class="overlay-content">
+            <li class="section-header-main__nav-item"><a href="#home">Home</a></li>
+            <li class="section-header-main__nav-item"><a href="#about">About</a></li>
+            <li class="section-header-main__nav-item"><a href="#skills">Skills</a></li>
+            <li class="section-header-main__nav-item"><a href="#education">Education</a></li>
+            <li class="section-header-main__nav-item"><a href="#experience">Experience</a></li>
+            <li class="section-header-main__nav-item"><a href="#work">Work</a></li>
+            <li class="section-header-main__nav-item"><a href="#contact">Contact</a></li>
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          </div>
         </ul>
+
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()" class="openbtn">&#9776;</span>
+
         <div class="section-header-main__copy">
           <small>&copy; Copyright &copy;
             <script>
@@ -73,23 +60,14 @@
             </script> All rights reserved </small>
         </div>
 
-        <!-- <div class="section-header-main__burger">
-          <input type="checkbox" id="overlay-input" />
-          <label for="overlay-input" id="overlay-button"><span></span></label>
-        </div> -->
-        
       </div>
 
-      <!-- END MENU-->
-
       <div class="section-header-content" id="home">
-
         <div class="container demo">
           <div class="content">
             <div id="large-header" class="large-header">
               <canvas id="demo-canvas"></canvas>
               <h1 class="main-title"><span class="thin">Developer</span> portfolio</h1>
-
               <a href="#about" class="arrow-down">
                 <div class="arrow">
                   <span></span>
@@ -97,46 +75,13 @@
                   <span></span>
                 </div>
               </a>
-
-
-
             </div>
           </div>
         </div>
-
-        <!-- <div class="content-slider">
-          <div class="slider">
-            <ul class="mask" style="height: 100%;">
-              <li class="anim1" style="height: 100%;">
-                <div class="section-header-slider-item">
-                  <div class="section-header-slider-item__title">I am a Alexandr</div>
-                  <div class="section-header-slider-item__subtitle">some text for other users</div>
-                  <div class="section-header-slider-item__button">
-                    <button>View portfolio</button>
-                  </div>
-                </div>
-              </li>
-              <li class="anim2">
-                <div class="section-header-slider-item">
-                  <div class="section-header-slider-item__title">I am a Alexandr</div>
-                  <div class="section-header-slider-item__subtitle">some text for other users</div>
-                  <div class="section-header-slider-item__button">
-                    <button>View portfolio</button>
-                  </div>
-                </div>
-              </li>
-              <li class="anim3">
-                <div class="quote">Hello, this is a quote from an animal.</div>
-                <div class="source">- Animal</div>
-              </li>
-            </ul>
-          </div>
-        </div> -->
       </div>
     </div>
   </header>
   <!-- END HEADER -->
-
 
   <!-- ABOUT -->
   <section class="section-outer section-about" id="about">
@@ -155,17 +100,17 @@
 
         <div class="section-about-content-item">
           <div id="stars"></div>
-          <div class="section-about-content-item__number slowNumber">12</div>
+          <div class="section-about-content-item__number slowNumber">14</div>
           <div class="section-about-content-item__title">Projects</div>
         </div>
         <div class="section-about-content-item">
           <div id="stars2"></div>
-          <div class="section-about-content-item__number slowNumber">9</div>
+          <div class="section-about-content-item__number slowNumber">7</div>
           <div class="section-about-content-item__title">Clients</div>
         </div>
         <div class="section-about-content-item">
           <div id="stars3"></div>
-          <div class="section-about-content-item__number slowNumber">11</div>
+          <div class="section-about-content-item__number slowNumber">17</div>
           <div class="section-about-content-item__title">Cups of coffee</div>
         </div>
 
@@ -377,13 +322,13 @@
           </div>
           <div class="arrows">
             <div class="control left">
-            <div class="arrow left">&lt;</div>
+              <div class="arrow left">&lt;</div>
+            </div>
+            <div class="control right">
+              <div class="arrow right gradient-border">&gt;</div>
+            </div>
           </div>
-          <div class="control right">
-            <div class="arrow right gradient-border">&gt;</div>
-          </div>
-          </div>
-          
+
         </div>
 
       </div>
@@ -391,7 +336,7 @@
   </section>
   <!-- END WORK -->
 
-  
+
 
 
   <!-- CONTACT -->
@@ -408,7 +353,7 @@
           </div>
 
           <div class="form__input">
-            <input class="form-input" type="email" id="email" placeholder="EMAIL" name="email" value="">
+            <input class="form-input" type="telephone" id="telephone" placeholder="TELEPHONE" name="telephone" value="">
           </div>
 
           <div class="form__textarea">
@@ -464,13 +409,14 @@
   <script src="./js/work.js"></script>
   <script src="./js/skill.js"></script>
   <script src="./js/main.js"></script>
+  <script src="./js/burger.js"></script>
 
 
-    <!-- <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script> -->
+  <!-- <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script> -->
 
-    <!-- slowly scroll -->
-   <script src="http://code.jquery.com/jquery-1.11.1.js"></script>
-   <script src="./js/scrollTo.js"></script>
+  <!-- slowly scroll -->
+  <script src="http://code.jquery.com/jquery-1.11.1.js"></script>
+  <script src="./js/scrollTo.js"></script>
 </body>
 
 </html>
